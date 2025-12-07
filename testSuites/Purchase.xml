@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite">
+    <groups>
+        <run>
+            <include name="Purchase"/>
+        </run>
+    </groups>
+
+    <test name="Submit Order Test">
+        <classes>
+            <class name="org.example.Tests.SubmitOrderTest"/>
+        </classes>
+    </test>
+
+    <test name="Error Validation Test">
+        <classes>
+            <class name="org.example.Tests.ErrorValidationsTest"/>
+        </classes>
+    </test>
+</suite>
